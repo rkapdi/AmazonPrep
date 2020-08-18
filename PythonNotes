@@ -1,0 +1,12 @@
+Enumerate:
+
+Lets you iterate through collection of items while keeping track of index of current item in a counter variable.
+e.g:
+  list = ['Alice','Bob','Anar']
+  for index, value in enumerate(list):
+    print(f'{index}: {value})
+    
+   >>>
+   0: Alice
+   1: Bob
+   2: Anar
