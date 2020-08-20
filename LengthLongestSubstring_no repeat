@@ -1,0 +1,52 @@
+==Java Solution==
+
+-- Sliding window analogy.
+-- Two pointers: P1, P2
+-- P1: Stays at the start of the string
+-- P2: Moves through the strings checking for duplicates
+-- Return Length of longest substring without repeating character: max
+
+-- Using a HashSet to keep track of unique chars.
+-- Once a repeated char is found, it is taken off from the [][][]
+
+public class maxLen {
+  
+   public int lengthOfLongestSubstring(String s) {
+    int p1 = 0;
+    int p2 = 0;
+    int max = 0;
+    
+    HashSet <Charachter> HS = new HashSet();
+    
+  for (int i =0; i < s.length(); i++){ 
+    //if s.charAt(i) is in HS
+    if (! s.charAt(i).contains in HS) {
+      HS.add(s[i]);
+      p1++;
+    }else {
+       
+     }
+  }
+
+}
+
+while (p2 < s.length()) {
+  //no duplicate --> add to HT
+  if(!HS.contains(s.charAt(p2))){
+    HS.add(s.charAt(p2));
+    p2++
+    max = Math.max(HS.size(), max);
+  } else{ //Duplicate --> remove first letter..........[WHY FIRST LETTER?]
+    HS.remove(s.charAt(p1));
+    p1++;
+  }
+  
+  return max;
+}
+
+
+Mistakes:
+
+-- used a for instead of while.
+-- did not move the pointer forward correctly.
+-- did not write the object next to the method, e.g:  >> s. << charAt(i);
