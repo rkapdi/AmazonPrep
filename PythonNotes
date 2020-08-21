@@ -10,3 +10,15 @@ e.g:
    0: Alice
    1: Bob
    2: Anar
+
+you can also choose the starting index for enumerate
+
+  list = ['Alice','Bob','Anar']
+  for index, value in enumerate(list, 1):
+    print(f'{index}: {value})
+   
+   >>>
+   1: Alice
+   2: Bob
+   3: Anar
+   
