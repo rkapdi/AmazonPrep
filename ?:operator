@@ -1,0 +1,16 @@
+variable values depend on an expression being true or false.
+
+for e.g:
+  if (a > b) {
+    max  = a;
+  } else{
+    max = b;
+  }
+  
+  can be written using the conditional operator in single line as:
+  
+  max = (a > b) ? a : b
+  
+  how does this work?
+  
+  -- the condition a > b is tested, if a is bigger, the first value following the ? is assigned to max.
